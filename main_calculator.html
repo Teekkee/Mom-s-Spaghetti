@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+
+    </style>
+    <script>
+        console.clear();
+        document.getElementsByClassName('inb').onkeydown = function() {
+            return !(/[A-Za-z]/);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>MVC Calculator</h1>
+    <div id="calc">
+        <hr>
+        <div class="tf">Input #1 :
+            <input id="operand1Value" type="number" class="inb">
+        </div>
+        <select id="action" class='op'>
+            <option value="0"> </option>
+            <option value="1">+</option>
+            <option value="2">-</option>
+            <option value="3">*</option>
+            <option value="4">/</option>
+        </select>
+        <div class="tf">Input #2 :
+            <input id="operand2Value" type="number" class="inb">
+        </div>
+        <button onclick="simpleCalc.calc()" class="btn">Evaluate</button>
+        <hr>
+        <div id='result'> Result: </div>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
